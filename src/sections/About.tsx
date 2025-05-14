@@ -27,7 +27,7 @@ const About = () => {
             </p>
 
             <p className="text-secondary-600 mb-6 leading-relaxed">
-              Led by Gautam Chetan Mehta (EUIN: E620286), Mehta Finvest operates with a strong focus on client-centricity, 
+              Led by Gautam Chetan Mehta, Mehta Finvest operates with a strong focus on client-centricity, 
               compliance, and ethical advisory practices, strictly in line with AMFI and SEBI regulations.
             </p>
 

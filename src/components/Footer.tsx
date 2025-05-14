@@ -37,10 +37,10 @@ const Footer = () => {
           <div>
             <h3 className="font-heading font-semibold text-lg mb-4">Contact Us</h3>
             <p className="text-gray-300 mb-2">Gautam Chetan Mehta</p>
-            <p className="text-gray-300 mb-2">ARN: 326946 | EUIN: E620286</p>
+            <p className="text-gray-300 mb-2">Mutual Fund Distributor</p>
             <p className="text-gray-300 mb-2">Mumbai, India</p>
             <p className="text-gray-300 mb-2">Email: contact@mehtafinvest.com</p>
-            <p className="text-gray-300">Phone: +91 98765 43210</p>
+            <p className="text-gray-300">Phone: +91 9820151091</p>
           </div>
         </div>
         

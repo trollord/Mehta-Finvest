@@ -19,19 +19,24 @@ export const services = [
     icon: 'Target',
   },
   {
-    title: 'Risk Profiling and Asset Allocation',
-    description: 'Customized strategies aligned with your financial comfort.',
-    icon: 'PieChart',
+    title: 'Pre-IPO',
+    description: 'Get early access to tomorrow\'s listed giants. Invest in companies before they go public.',
+    icon: 'Rocket',
   },
   {
-    title: 'Tax Saving Investments',
-    description: 'ELSS funds and other options under 80C.',
-    icon: 'Receipt',
+    title: 'Venture Capital',
+    description: 'Be part of the startup story. Participate in India\'s fastest-growing innovation ecosystem.',
+    icon: 'Lightbulb',
   },
   {
     title: 'Portfolio Reviews',
     description: 'Regular monitoring and advisory to keep your portfolio aligned with your objectives.',
     icon: 'ClipboardList',
+  },
+  {
+    title: 'Alternative Investment Funds',
+    description: 'Curated investment opportunities across private equity, real estate, and structured credit.',
+    icon: 'Building2',
   }
 ];
 
@@ -47,11 +52,6 @@ export const whyChooseUs = [
     icon: 'Settings',
   },
   {
-    title: 'Powered by Sapient Wealth',
-    description: 'Access to deep expertise, world-class research, and robust fund evaluation models.',
-    icon: 'Award',
-  },
-  {
     title: 'Transparent Processes',
     description: 'Complete clarity on commissions, investments, and documentation.',
     icon: 'FileText',
@@ -60,6 +60,16 @@ export const whyChooseUs = [
     title: 'Education-Focused',
     description: 'We ensure you understand your investments, not just own them.',
     icon: 'GraduationCap',
+  },
+  {
+    title: 'Research-Driven Advisory',
+    description: 'Every recommendation is backed by deep analysis and global market insights.',
+    icon: 'Brain',
+  },
+  {
+    title: 'Compliance & Integrity First',
+    description: 'Fully aligned with AMFI & SEBI guidelines. We operate with zero tolerance for mis-selling.',
+    icon: 'Shield',
   }
 ];
 
@@ -88,8 +98,9 @@ export const resourceTopics = [
 
 export const contactInfo = {
   name: 'Gautam Chetan Mehta',
-  title: 'ARN: 326946 | EUIN: E620286',
+  title: 'Founding Partner',
   location: 'Mumbai, India',
-  email: 'contact@mehtafinvest.com',
-  phone: '+91 98765 43210',
+  email: 'gautam@mehtafinvest.com',
+  phone: '+91 9820151091',
+  whatsapp: '+91 9820151091'
 };

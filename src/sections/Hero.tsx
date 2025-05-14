@@ -25,13 +25,8 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-secondary-600 mb-8 leading-relaxed">
-              At Mehta Finvest, we believe that wealth is built on clarity, discipline, and a commitment to doing what's right. 
-              As a registered Mutual Fund Distributor and proud sub-broker of Sapient Wealth, we work alongside you to create 
-              a roadmap for your financial goals.
-            </p>
-            
-            <p className="text-xl md:text-2xl font-heading font-semibold text-secondary-700 mb-8">
-              Your Journey to Financial Freedom Begins Here.
+              At Mehta Finvest, clarity meets conviction. We believe true wealth is built on thoughtful decisions, consistent discipline, and deep understanding. 
+              With every interaction, we aim to simplify complexity and create long-term value tailored to your life's vision.
             </p>
             
             <div className="flex flex-wrap gap-4">
