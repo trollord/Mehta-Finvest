@@ -20,10 +20,24 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Form submission logic would go here
-    console.log('Form submitted:', formState);
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  
+  try {
+    const response = await fetch('https://cqgo2gggpg.execute-api.ap-northeast-1.amazonaws.com/default/mailer_function', {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formState),
+    });
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    // const data = await response.json();
     setShowSuccess(true);
     setFormState({
       name: '',
@@ -35,7 +49,11 @@ const Contact = () => {
     setTimeout(() => {
       setShowSuccess(false);
     }, 5000);
-  };
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    // You might want to add error state handling here
+  }
+};
 
   return (
     <section id="contact" className="py-20 bg-gray-50">
@@ -194,7 +212,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                
+              
                 <Button variant="primary" type="submit" className="w-full md:w-auto">
                   Send Message
                 </Button>
