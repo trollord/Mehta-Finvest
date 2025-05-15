@@ -25,19 +25,29 @@ const Contact = () => {
   
   try {
     const response = await fetch('https://cqgo2gggpg.execute-api.ap-northeast-1.amazonaws.com/default/mailer_function', {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
         'Content-Type': 'application/json',
+        'Accept': 'application/json'
       },
       body: JSON.stringify(formState),
     });
-
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
+    
+    const responseText = await response.text();
+    
+    let data;
+    try {
+      data = JSON.parse(responseText);
+      console.log('Parsed response data:', data);
+    } catch (e) {
+      console.error('Could not parse response as JSON:', e);
     }
 
-    // const data = await response.json();
+    if (!response.ok) {
+      throw new Error(`Network response was not ok: ${response.status} ${responseText}`);
+    }
+
     setShowSuccess(true);
     setFormState({
       name: '',
@@ -51,6 +61,7 @@ const Contact = () => {
     }, 5000);
   } catch (error) {
     console.error('Error submitting form:', error);
+    alert('There was an error sending your message. Please try again later.');
     // You might want to add error state handling here
   }
 };
