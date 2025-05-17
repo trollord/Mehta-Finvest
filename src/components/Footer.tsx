@@ -39,7 +39,7 @@ const Footer = () => {
             <p className="text-gray-300 mb-2">Gautam Chetan Mehta</p>
             <p className="text-gray-300 mb-2">Mutual Fund Distributor</p>
             <p className="text-gray-300 mb-2">Mumbai, India</p>
-            <p className="text-gray-300 mb-2">Email: contact@mehtafinvest.com</p>
+            <p className="text-gray-300 mb-2">Email: gautam@mehtafinvest.com</p>
             <p className="text-gray-300">Phone: +91 9820151091</p>
           </div>
         </div>
