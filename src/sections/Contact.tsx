@@ -24,6 +24,9 @@ const Contact = () => {
   e.preventDefault();
   
   try {
+    const reqBody = {...formState,To:'gautam@mehtafinvest.com'}
+    // const reqBody = {...formState,To:'mskasan30@gmail.com'}
+
     const response = await fetch('https://cqgo2gggpg.execute-api.ap-northeast-1.amazonaws.com/default/mailer_function', {
       method: 'POST',
       mode: 'cors',
@@ -31,7 +34,7 @@ const Contact = () => {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
-      body: JSON.stringify(formState),
+      body: JSON.stringify(reqBody),
     });
     
     const responseText = await response.text();
